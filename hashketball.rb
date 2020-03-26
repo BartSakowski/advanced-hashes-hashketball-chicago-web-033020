@@ -158,7 +158,7 @@ end
 def team_colors(team) #takes a team name and returns an ARRAY of that team colors.
   colors_array = []
   game_hash.each do |loc, team_data|
-    if team_data[:team_name] == team_name
+    if team_data[:team_name] == team
       colors_array >> team_data[:colors]
     end
     colors_array
