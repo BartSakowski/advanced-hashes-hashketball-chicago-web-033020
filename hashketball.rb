@@ -188,13 +188,11 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-i = 0
-  if i < player_array.length do
-    if player_array[i][:player_name] == player_name
-      return player[i]
-    else
-      i +=1
-    end
+  new_hash = {}
+  player_array.each do |player|
+    if player[:player_name] == player_name
+      player.shift
+      new_hash << player
     end
   end
 end
