@@ -200,8 +200,9 @@ end
 
 
 def big_shoe_rebounds
-  player_array.max_by{|k| k{:shoe}}
-binding.pry
+  player_array.max_by{|k| k{:shoe}}[:name]
+
+
 end
 
 
