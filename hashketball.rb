@@ -161,9 +161,9 @@ def team_colors(team) #takes a team name and returns an ARRAY of that team color
     team_data.each do |stuff, things|
       binding.pry
 
-      if team_data|stuff| == team
+
         return team_data[:colors]
-end
+
       end
       colors_array
     end
