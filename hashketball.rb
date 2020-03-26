@@ -174,6 +174,7 @@ end
 def player_numbers(team_name)
 new_array = []
   player_array.each do |attribute, data|
+    binding.pry
     if attribute == team_name
       new_array << data[:number]
 
