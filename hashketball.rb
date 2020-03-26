@@ -163,12 +163,6 @@ def team_colors(team_name) #takes a team name and returns an ARRAY of that team 
   end
 end
 
-# def team_names #returns an array of the team names
-#   game_hash.map do |place, team|
-#     return team[:team_name]
-#   end
-# end
-
 def team_names
   new_array = []
   game_hash.each do |place,team|
@@ -176,6 +170,19 @@ def team_names
   end
   new_array
 end
+
+def player_numbers(team_name)
+new_array = []
+  player_array.each do |attribute, data|
+    if attribute == team_name
+      new_array << data[:number]
+    end
+  end
+end
+      
+
+
+
 # def player_attribute(player_name)
 #   game_hash.each do |place, team|
 #     team.each do |attribute, data|
@@ -195,5 +202,12 @@ end
 #         end
 #       end
 #     end
+#   end
+# end
+
+
+# def team_names #returns an array of the team names
+#   game_hash.map do |place, team|
+#     return team[:team_name]
 #   end
 # end
