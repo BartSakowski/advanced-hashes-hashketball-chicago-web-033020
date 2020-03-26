@@ -163,7 +163,7 @@ def team_colors(team) #takes a team name and returns an ARRAY of that team color
 
       if team_data|stuff| == team
         return team_data[:colors]
-
+end
       end
       colors_array
     end
