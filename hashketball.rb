@@ -176,7 +176,9 @@ new_array = []
   player_array.each do |attribute, data|
     if attribute == team_name
       new_array << data[:number]
+
     end
+    new_array
   end
 end
 
