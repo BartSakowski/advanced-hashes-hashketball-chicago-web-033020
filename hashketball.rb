@@ -155,7 +155,7 @@ def shoe_size(player_name)
   end
 end
 
-def team_colors(team) #takes a team name and returns an ARRAY of that team colors.
+def team_colors(team_name) #takes a team name and returns an ARRAY of that team colors.
   game_hash.each do |place, team|
     if team[:team_name] == team
       return team[:colors]
