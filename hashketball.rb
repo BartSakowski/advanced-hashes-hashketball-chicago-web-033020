@@ -200,7 +200,7 @@ end
 
 
 def big_shoe_rebounds
-  return player_array.max_by{|k| k[:shoe]}[:rebound]
+  return(player_array.max_by{|k| k[:shoe]}[:rebound])
 end
 
 
