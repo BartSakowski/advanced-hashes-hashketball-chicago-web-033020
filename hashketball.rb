@@ -191,7 +191,7 @@ def player_stats(player_name)
   i = 0
   if i < player_array.length do
     if player_array[i][:player_name] == player_name
-      
+      binding.binding.pry
   end
 
 end
