@@ -169,6 +169,13 @@ def team_names #returns an array of the team names
   end
 end
 
+def team_names
+  new_array = []
+  game_hash.each do |place,team|
+    new_array << team[:team_name]
+  end
+  new_array
+end
 # def player_attribute(player_name)
 #   game_hash.each do |place, team|
 #     team.each do |attribute, data|
