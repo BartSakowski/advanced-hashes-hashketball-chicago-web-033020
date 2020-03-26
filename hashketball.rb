@@ -172,14 +172,12 @@ def team_names
 end
 
 def player_numbers(team_name)
-new_array = []
-  player_array.each do |player|
-    binding.pry
-    if attribute == team_name
-      new_array << data[:number]
+  game_hash.map do |place, team|
+    if team[:team_name] == team_name
+      team.each do |attribute, data|
 
+      end
     end
-    new_array
   end
 end
 
