@@ -173,7 +173,7 @@ end
 
 def player_numbers(team_name)
 new_array = []
-  player_array.each do |attribute, data|
+  player_array.each do |player|
     binding.pry
     if attribute == team_name
       new_array << data[:number]
