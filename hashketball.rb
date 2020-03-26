@@ -173,7 +173,7 @@ end
 
 def player_numbers(team_name)
   new_array = []
-  game_hash.map do |place, team|
+  game_hash.each do |place, team|
     if team[:team_name] == team_name
       team.each do |attribute, data|
         if attribute == :players
