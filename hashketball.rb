@@ -193,6 +193,7 @@ i = 0
   if i < player_array.length do
     if player_array[i][:player_name] == player_name
       return player[i]
+      binding.pry
     else
       i +=1
     end
