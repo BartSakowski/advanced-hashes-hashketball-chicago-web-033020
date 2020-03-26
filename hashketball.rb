@@ -161,9 +161,8 @@ def team_colors(team) #takes a team name and returns an ARRAY of that team color
     if team_data[:team_name] == team_name
       colors_array >> team_data[:colors]
     end
-    
-
-
+    colors_array
+  end
 end
 
 
