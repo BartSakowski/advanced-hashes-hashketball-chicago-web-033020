@@ -192,6 +192,7 @@ def player_stats(player_name)
   if i < player_array.length do
     if player_array[i][:player_name] == player_name
       binding.pry
+    end
   end
 
 end
