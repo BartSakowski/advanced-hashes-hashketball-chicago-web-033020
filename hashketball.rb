@@ -165,7 +165,7 @@ end
 
 def team_name #returns an array of the team names
   game_hash.map do |place, team|
-
+    return team[:team_name]
   end
 end
 
