@@ -163,7 +163,11 @@ def team_colors(team_name) #takes a team name and returns an ARRAY of that team 
   end
 end
 
+def team_name #returns an array of the team names
+  game_hash.each do |place, team|
 
+  end
+end
 
 # def player_attribute(player_name)
 #   game_hash.each do |place, team|
