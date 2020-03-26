@@ -192,7 +192,7 @@ def player_stats(player_name)
   player_array.each do |player|
     if player[:player_name] == player_name
       player.shift
-      new_hash << player
+      new_hash = player
     end
   end
 end
